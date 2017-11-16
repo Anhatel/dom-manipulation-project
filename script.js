@@ -7,8 +7,6 @@ function createGrid(gridSpaces) {
   }
 }
 
-let luminance = 50;
-
 function addBackgroundColor(element) {
   let random = Math.floor(Math.random() * 359);
   let randomColor = "hsl(" + random + ", 100%, 50%)";
