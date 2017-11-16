@@ -8,8 +8,12 @@ function createGrid(gridSpaces) {
 }
 
 function addBackgroundColor(element) {
+  let random1 = Math.floor(Math.random() * 255);
+  let random2 = Math.floor(Math.random() * 255);
+  let random3 = Math.floor(Math.random() * 255);
+  let randomColor = "rgb(" + random1 + ", " + random2 + ", " + random3 + ")";
   element.addEventListener("mouseover", event => {
-    element.style.backgroundColor = "black";
+    element.style.backgroundColor = randomColor;
   });
 }
 
